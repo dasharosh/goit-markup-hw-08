@@ -1,0 +1,11 @@
+.header .container {
+  @include flexCenter(flex, null, center);
+}
+
+.header__contacts {
+  margin-left: auto;
+}
+
+.border {
+  border-bottom: 1px solid #ececec;
+}

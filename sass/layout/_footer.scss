@@ -1,0 +1,121 @@
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+  &-blocks {
+    @include flexCenter(flex, null, baseline);
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &-tel {
+    @extend %links-style;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+
+  &-contacts-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &-soc {
+    display: block;
+    margin-left: 70px;
+  }
+
+  &-sub-title {
+    color: var(--primary-white-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+  }
+
+  &-soc-list {
+    display: flex;
+  }
+
+  &-soc-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &-soc-link {
+    @include flexCenter;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    &:hover,
+    &:focus {
+      background: var(--accent-color);
+      transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &-soc-icon {
+    fill: var(--primary-white-color);
+  }
+
+  &-subscribe {
+    display: block;
+    margin-left: auto;
+  }
+
+  &-subscribe-wrap {
+    display: flex;
+  }
+
+  &-input {
+    background-color: transparent;
+    outline: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--primary-white-color);
+
+    width: 358px;
+    height: 100%;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 12px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      border-color: var(--accent-color);
+    }
+  }
+
+  &-button {
+    position: relative;
+    padding-left: 29px;
+    padding-right: 62px;
+  }
+
+  &-send-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    fill: var(--primary-white-color);
+  }
+}
+
+.address {
+  @extend %links-style;
+  color: var(--primary-white-color);
+}

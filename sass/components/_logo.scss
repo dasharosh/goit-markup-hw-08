@@ -1,0 +1,26 @@
+.logo {
+  font-family: $fontLogo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  @extend %links-style;
+}
+
+.logo__accent {
+  color: var(--accent-color);
+
+  font-family: $fontLogo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo--color-dark {
+  color: #000000;
+}
+
+.logo--color-light {
+  color: var(--primary-white-color);
+}
