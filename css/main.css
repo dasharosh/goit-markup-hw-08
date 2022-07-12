@@ -23,7 +23,9 @@ ul {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -65,14 +67,36 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  /*outline: 1px solid tomato;*/
+  outline: 1px solid tomato;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
-  padding: 94px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .btn {
@@ -115,7 +139,12 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
-  margin: 0 auto 50px;
+  margin: 0 auto 30px;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    margin: 0 auto 50px;
+  }
 }
 
 .sub-title {
@@ -448,17 +477,23 @@ body {
   margin: 0 auto;
 }
 
-.benefits {
-  padding-top: 94px;
-}
 .benefits__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .benefits__item {
-  flex-basis: calc((100% - 90px) / 4);
+  width: 100%;
 }
-.benefits__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .benefits__icon-box {
   background-color: #f5f4fa;
@@ -519,7 +554,16 @@ body {
   border: none;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  flex-basis: calc((100% - 90px) / 4);
+}
+@media screen and (min-width: 768px) {
+  .team-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .team-descr {
   padding: 30px 0px;
