@@ -2,12 +2,22 @@
   color: var(--text-color);
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
 
-  display: flex;
+  display: none;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.1;
+
+    display: flex;
+  }
 }
 
 .contacts__mail,
@@ -27,6 +37,19 @@
   fill: currentColor;
 }
 
+.contacts__item {
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .contacts__item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
