@@ -1077,13 +1077,11 @@ body {
     margin-right: 12px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer-button {
-    position: relative;
-    height: 50px;
-    padding-left: 29px;
-    padding-right: 62px;
-  }
+.footer-button {
+  position: relative;
+  height: 50px;
+  padding-left: 29px;
+  padding-right: 62px;
 }
 .footer-send-icon {
   position: absolute;

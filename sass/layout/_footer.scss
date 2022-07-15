@@ -160,12 +160,10 @@
   }
 
   &-button {
-    @include desktop {
-      position: relative;
-      height: 50px;
-      padding-left: 29px;
-      padding-right: 62px;
-    }
+    position: relative;
+    height: 50px;
+    padding-left: 29px;
+    padding-right: 62px;
   }
 
   &-send-icon {
