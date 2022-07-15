@@ -1,8 +1,32 @@
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+
   &-blocks {
-    @include flexCenter(flex, null, baseline);
+    width: 100%;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-left: 61px;
+      padding-right: 74px;
+    }
+    @include desktop {
+      @include flexCenter(flex, null, baseline);
+    }
+  }
+
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+    @include desktop {
+      align-items: flex-start;
+      text-align: start;
+    }
   }
 
   &__logo {
@@ -19,12 +43,25 @@
   }
 
   &-contacts-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @include desktop {
+      margin-bottom: 9px;
+    }
   }
 
   &-soc {
-    display: block;
-    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    @include tablet {
+      margin-left: auto;
+    }
+    @include desktop {
+      align-items: flex-start;
+      text-align: start;
+      margin-left: 70px;
+    }
   }
 
   &-sub-title {
@@ -70,12 +107,25 @@
   }
 
   &-subscribe {
-    display: block;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin: 0 auto;
+    }
+
+    @include desktop {
+      align-items: flex-start;
+      text-align: start;
+      margin-left: auto;
+    }
   }
 
   &-subscribe-wrap {
-    display: flex;
+    @include desktop {
+      display: flex;
+    }
   }
 
   &-input {
@@ -86,24 +136,36 @@
     border-radius: 4px;
     color: var(--primary-white-color);
 
-    width: 358px;
-    height: 100%;
+    width: 450px;
+    height: 50px;
 
     padding-left: 16px;
     padding-right: 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus {
       border-color: var(--accent-color);
     }
+
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+      width: 290px;
+    }
+
+    @include desktop {
+      width: 358px;
+      margin-right: 12px;
+    }
   }
 
   &-button {
-    position: relative;
-    padding-left: 29px;
-    padding-right: 62px;
+    @include desktop {
+      position: relative;
+      height: 50px;
+      padding-left: 29px;
+      padding-right: 62px;
+    }
   }
 
   &-send-icon {

@@ -70,13 +70,13 @@
         </button>
       </div>
       <div class="mob-nav is-hidden">
-        <div class="mob-nav-container">
+        <div class="mob-nav__container">
           <button type="button" class="menu-close-btn">
             <svg class="icon-menu-open" width="18" height="18">
               <use href="./images/icons.svg#icon-close_24px"></use>
             </svg>
           </button>
-          <div class="mob-nav-top">
+          <div class="mob-nav__top">
             <ul class="mob-nav__list list">
               <li class="mob-nav__item">
                 <a class="mob-nav__link link" href="/">Студия</a>
@@ -93,7 +93,7 @@
               </li>
             </ul>
           </div>
-          <div class="mob-nav-bottom">
+          <div class="mob-nav__bottom">
             <ul class="mob-contacts list">
               <li class="mob-contacts__item">
                 <a class="mob-contacts__tel link" href="tel:+380961111111">
@@ -110,18 +110,18 @@
               </li>
             </ul>
 
-            <ul class="mob-nav__soc list">
-              <li class="mob-nav__soc-item">
-                <a href="" class="mob-nav__soc-link link">Instagram</a>
+            <ul class="mob-soc list">
+              <li class="mob-soc__item">
+                <a href="" class="mob-soc__link link">Instagram</a>
               </li>
-              <li class="mob-nav__soc-item">
-                <a href="" class="mob-nav__soc-link link">Twitter</a>
+              <li class="mob-soc__item">
+                <a href="" class="mob-soc__link link">Twitter</a>
               </li>
-              <li class="mob-nav__soc-item">
-                <a href="" class="mob-nav__soc-link link">Facebook</a>
+              <li class="mob-soc__item">
+                <a href="" class="mob-soc__link link">Facebook</a>
               </li>
-              <li class="mob-nav__soc-item">
-                <a href="" class="mob-nav__soc-link link">LinkedIn</a>
+              <li class="mob-soc__item">
+                <a href="" class="mob-soc__link link">LinkedIn</a>
               </li>
             </ul>
           </div>
@@ -569,13 +569,18 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <!--Footer-->
+    <footer class="footer">
       <div class="container">
-        <ul class="footer-blocks">
-          <li class="footer-contacts">
+        <div class="footer-blocks">
+          <div class="footer-contacts">
             <h2 class="visually-hidden">Контакты</h2>
             <address id="contacts">
-              <a class="logo logo--color-light footer__logo link" href="/" lang="en">
+              <a
+                class="logo logo--color-light footer__logo link"
+                href="/"
+                lang="en"
+              >
                 <span class="logo__accent">Web</span>Studio
               </a>
               <ul class="contacts-list list">
@@ -588,15 +593,19 @@
                   </a>
                 </li>
                 <li class="footer-contacts-item">
-                  <a href="mailto:info@example.com" class="footer-tel link">info@example.com</a>
+                  <a href="mailto:info@example.com" class="footer-tel link"
+                    >info@example.com</a
+                  >
                 </li>
                 <li class="footer-contacts-item">
-                  <a href="tel:+380991111111" class="footer-tel link">+38 099 111 11 11</a>
+                  <a href="tel:+380991111111" class="footer-tel link"
+                    >+38 099 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
-          </li>
-          <li class="footer-soc">
+          </div>
+          <div class="footer-soc">
             <h3 class="footer-sub-title">Присоединяйтесь</h3>
             <ul class="footer-soc-list list">
               <li class="footer-soc-item">
@@ -628,8 +637,8 @@
                 </a>
               </li>
             </ul>
-          </li>
-          <li class="footer-subscribe">
+          </div>
+          <div class="footer-subscribe">
             <h3 class="footer-sub-title">Подпишитесь на рассылку</h3>
             <div class="footer-subscribe-wrap">
               <form class="footer-form">
@@ -648,10 +657,10 @@
                 </svg>
               </button>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
-    </footer> -->
+    </footer>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
