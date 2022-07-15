@@ -23,9 +23,11 @@
     align-items: center;
     text-align: center;
     margin-bottom: 60px;
+
     @include desktop {
       align-items: flex-start;
       text-align: start;
+      margin-bottom: 0;
     }
   }
 
@@ -61,6 +63,7 @@
       align-items: flex-start;
       text-align: start;
       margin-left: 70px;
+      margin-bottom: 0;
     }
   }
 
